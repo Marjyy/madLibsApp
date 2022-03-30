@@ -1,8 +1,5 @@
 "use strict"
 
-//original Story
-
-let originalStory="You decide to leave your job as occupation and your country.You choose to travel by meansOfTransportation to the country of your dream: your favorite country. You take with you your favorite object";
 
 //Total questions
 let numberofquestion = 5;
@@ -33,8 +30,19 @@ numberofquestion--;
 }
 
 
+//The User Story
 
+let originalStory= `<h2>${userInputs[0]} you decide to leave your job as ${userInputs[1]} and ${userInputs[2]}<\h2>.<h2>You choose to travel by ${userInputs[3]} to the country of your dream: ${userInputs[4]}<\h2>.<h2> You take with you your ${userInputs[5]} to reassure you during the trip<\h2>`;
+console.log(originalStory);
 
+//Alert
+
+alert("Well done, you finish the game....Are you ready for your funny story?");
+
+// Print the original Story
+
+console.log(originalStory);
+document.write(originalStory);
 
 
 
