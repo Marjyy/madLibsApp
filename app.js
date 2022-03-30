@@ -1,24 +1,51 @@
+"use strict"
+
+//original Story
+
 let originalStory="You decide to leave your job as occupation and your country.You choose to travel by meansOfTransportation to the country of your dream: your favorite country. You take with you your favorite object";
 
-var yourName=prompt("Enter your name: ");
-var occupation=prompt("Enter an occupation: ");
-var country=prompt("Enter a country: ");
-var meansOfTransportation=prompt("Enter a means of transportation: ");
-var favoriteCountry=prompt("Enter the name of your favorite country: ");
-var favoriteObject=prompt("Enter the name of your favorite object: ");
+//Total questions
+let numberofquestion = 5;
+
+//Question counter
+let questioncounter=0;
+
+//test logic
+let solicitation = `Please enter`;
+let questionArray =[
+`${solicitation} your name`,
+`${solicitation} an occupation`,
+`${solicitation} a country`,
+`${solicitation} a means of transport`,
+`${solicitation} your favorite country`,
+`${solicitation} your favorite object`,
+];
+
+//variable
+let userInputs=[];
+
+for (let i=numberofquestion; i>=0; i--) {
+    console.log(questionArray[questioncounter] + `...(${numberofquestion} question left)`);
+    userInputs.push(prompt(questionArray[questioncounter]+ `...(${numberofquestion} question left)`));
+console.log(userInputs);
+questioncounter++;
+numberofquestion--;
+}
 
 
 
-let userInputs=[yourName,occupation,country,meansOfTransportation,favoriteCountry,favoriteObject];
-let userStory= (`${userInputs[0]} decide to leave your job as ${userInputs[1]} and ${userInputs[2]}. You choose to travel by ${userInputs[3]} to the country of your dream: ${userInputs[4]}. You take with you ${userInputs[5]}`);
 
 
 
-let numberofquestion = 6;
 
 
 
-document.write(userStory);
+
+
+
+
+
+
 
 
 
